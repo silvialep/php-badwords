@@ -27,11 +27,19 @@
     <h2>Ecco il tuo testo censurato con la parola da te scelta</h2>
     <p style="height: 200px; width: 300px; border: 1px solid black">
         <?php
+        
+        $newParagraph = str_replace($_POST['parolaccia'], "***", $_POST['paragrafo']);
 
-        echo str_replace($_POST['parolaccia'], "***", $_POST['paragrafo']); // outputs Hello Dolly!
+        echo $newParagraph;
 
         ?> 
     </p>
-    
+    <p>
+        <?php
+
+        echo 'La sua lunghezza è di ' . strlen($newParagraph) . ' caratteri e di ' . str_word_count($newParagraph) . ' parole';
+
+        ?>
+    </p>
 </body>
 </html>

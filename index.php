@@ -9,7 +9,7 @@
 <body>
     <h1>Censura le parole</h1>
     <form action="answers.php" method="POST">
-        <input style="height: 100px; width: 300px" type="textarea" name="paragrafo" placeholder="Inserisci il testo desiderato" required>
+        <textarea style="height: 100px; width: 300px;" type="text" name="paragrafo" placeholder="Inserisci il testo desiderato" required></textarea>
         <input style="width: 300px;" type="text" name="parolaccia" placeholder="Inserisci la parola da censurare nel testo" required>
         <button type="submit">Invia il testo</button>
     </form>
