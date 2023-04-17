@@ -9,10 +9,12 @@
 <body>
     <h1>Censura le parolacce</h1>
     <form action="answers.php" method="POST">
-        <input type="textarea" name="paragrafo" placeholder="Inserisci il testo desiderato">
-        <input type="text" name="parolaccia" placeholder="Inserisci la parola da censurare nel testo">
+        <input style="height: 100px; width: 300px" type="textarea" name="paragrafo" placeholder="Inserisci il testo desiderato" required>
+        <input style="width: 300px;" type="text" name="parolaccia" placeholder="Inserisci la parola da censurare nel testo" required>
         <button type="submit">Invia il testo</button>
     </form>
+
+
     
 </body>
 </html>

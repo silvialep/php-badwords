@@ -7,6 +7,21 @@
     <title>Censura le parolacce</title>
 </head>
 <body>
-    
+    <h2>Ecco il tuo testo</h2>
+    <p style="height: 200px; width: 300px; border: 1px solid black">
+        <?php 
+        
+        echo $_POST['paragrafo'];
+
+        
+        ?>
+    </p>
+    <p>
+        <?php
+
+        echo 'La sua lunghezza è di ' . strlen($_POST['paragrafo']) . ' caratteri e di ' . str_word_count($_POST['paragrafo']) . ' parole';
+
+        ?>
+    </p>
 </body>
 </html>
