@@ -19,7 +19,7 @@
     <p>
         <?php
 
-        echo 'La sua lunghezza è di ' . strlen($_POST['paragrafo']) . ' caratteri e di ' . str_word_count($_POST['paragrafo']) . ' parole';
+        echo 'La sua lunghezza è di ' . strlen($_POST['paragrafo']) . ' caratteri e di ' . str_word_count($_POST['paragrafo']) . ' parole.';
 
         ?>
     </p>
@@ -37,7 +37,7 @@
     <p>
         <?php
 
-        echo 'La sua lunghezza è di ' . strlen($newParagraph) . ' caratteri e di ' . str_word_count($newParagraph) . ' parole';
+        echo 'La sua lunghezza è di ' . strlen($newParagraph) . ' caratteri e di ' . str_word_count($newParagraph) . ' parole.';
 
         ?>
     </p>
